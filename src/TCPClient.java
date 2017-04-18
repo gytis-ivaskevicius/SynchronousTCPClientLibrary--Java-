@@ -36,7 +36,7 @@ public class TCPClient {
             public void run() {
                 connect(ip, port);
             }
-        });
+        }).start();
     }
 
     public void connectInSeperateThread(final String ip, final String port) {
